@@ -1,0 +1,31 @@
+* { box-sizing: border-box; }
+body { margin: 0; font: 15px/1.6 Inter, Segoe UI, Arial, sans-serif; background: #f3f5fa; color: #202c43; }
+.layout { width: min(100% - 32px, 1000px); margin: 35px auto; }
+.topbar { display: flex; align-items: center; justify-content: space-between; gap: 20px; background: linear-gradient(115deg, #182b54, #284b8c); color: white; padding: 34px; border-radius: 16px; }
+.eyebrow { letter-spacing: .08em; text-transform: uppercase; font-size: 11px; opacity: .85; }
+h1 { font-size: 30px; margin: 8px 0; }
+h2 { margin: 0 0 15px; font-size: 19px; }
+.topbar p { margin: 0; color: #dce6ff; }
+.card { background: #fff; border: 1px solid #e7eaf0; padding: 26px 30px; margin: 20px 0; border-radius: 14px; box-shadow: 0 3px 15px #23395b0d; }
+.card p { margin: 6px 0; }
+code { overflow-wrap: anywhere; font-size: 12px; }
+.section-title { display: flex; justify-content: space-between; align-items: start; gap: 12px; }
+.tag { background: #e8f1ff; color: #275ab0; font-size: 11px; padding: 4px 10px; border-radius: 40px; font-weight: 700; }
+.create-form { display: flex; gap: 12px; }
+input { flex: 1; padding: 11px 14px; border: 1px solid #cbd4e3; border-radius: 8px; min-width: 0; font: inherit; }
+button { background: #2559b0; color: white; border: 0; padding: 11px 16px; border-radius: 8px; cursor: pointer; font: 600 13px inherit; }
+button:hover { filter: brightness(1.12); }
+button.danger { background: #b02c43; }
+button.logout { background: #ffffff1c; border: 1px solid #ffffff70; white-space: nowrap; }
+.requests { list-style: none; margin: 0; padding: 0; }
+.requests li { border-top: 1px solid #edf0f5; display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 15px 0; flex-wrap: wrap; }
+.requests li:first-child { border-top: 0; }
+.requests small { display: block; color: #77839a; }
+.actions { display: flex; gap: 8px; }
+.status { font-size: 11px; padding: 5px 9px; border-radius: 8px; background: #fff1cc; color: #865e00; font-weight: 700; }
+.status.validee { background: #def6e9; color: #176641; }
+.status.refusee { background: #ffe3e6; color: #942b41; }
+.empty { color: #7b879c; }
+.notice { background: #e7efff; padding: 14px; border-radius: 8px; }
+footer { color: #8792a5; text-align: center; padding: 20px; font-size: 12px; }
+@media(max-width: 600px) { .topbar, .create-form { flex-direction: column; align-items: stretch; } .card, .topbar { padding: 20px; } h1 { font-size: 24px; } }

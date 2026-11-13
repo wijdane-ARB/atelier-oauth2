@@ -1,0 +1,9 @@
+# Generated artifacts and local config
+**/target/
+**/node_modules/
+**/dist/
+**/.idea/
+**/.vscode/
+**/.DS_Store
+*.log
+.env
